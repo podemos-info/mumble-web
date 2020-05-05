@@ -1,0 +1,83 @@
+$black: #bbb !default
+$darkgray: #777 !default
+$gray: #555 !default
+$lightgray: #555 !default
+$bg-color: #2c2c2c !default
+$white: #1c1c1c !default
+
+$lightblue: #557 !default
+
+$toolbar-hover-bg-color: $lightblue !default
+$toolbar-hover-border-color: $lightblue !default
+$toolbar-active-bg-color: $gray !default
+$toolbar-active-border-color: $gray !default
+$dialog-color: $black !default
+$channel-selected-bg-color: $lightblue !default
+
+@import '../MetroMumbleLight/main';
+
+.dialog-header {
+  color: #000;
+  font-weight: bold;
+}
+
+.toolbar img {
+  width:50px;
+  height:50px;
+}
+
+.toolbar-horizontal {
+  height:60px;
+}
+
+.toolbar-vertical {
+  margin:0;
+  height:60px;
+  //width:60px;
+}
+
+.tb-connect, .tb-information, .tb-record, .tb-comment, .tb-settings, .tb-sourcecode, .divider, .handle-vertical, .handle-horizontal {
+  display: none;
+}
+
+.toolbar-horizontal ~ .channel-root-container, .toolbar-vertical ~ .channel-root-container {
+  position: absolute;
+  right: 40px;
+  top: 66px;
+  margin-top: 2px;
+  width: calc(30% - 6px);
+  height: calc(80% - 140px);
+  min-width: 260px;
+  opacity: 0.8;
+  overflow-y: auto;
+}
+
+.toolbar-horizontal ~ .chat, .toolbar-vertical ~ .chat {
+  margin-top: 2px;
+  margin-left: 1%;
+  width: 98%;
+  height: calc(100% - 130px);
+  overflow-y: auto;
+}
+
+.toolbar-vertical {
+  flex-direction: row;
+}
+
+body, input, button, .dialog-submit, .dialog-close {
+  font-size:1.2em;
+}
+
+#message-box {
+    left: 0;
+    padding: 1% 1% 1% 1%;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    background: #eee;
+    color: #000;
+    width: 96%;
+    margin: 0 1% 0 1%;
+    height: 60px;
+}

@@ -6,7 +6,8 @@ var themes = {
   'MetroMumbleLight': 'MetroMumbleLight',
   'MetroMumbleDark': 'MetroMumbleDark',
   'light': 'MetroMumbleLight',
-  'dark': 'MetroMumbleDark'
+  'dark': 'MetroMumbleDark',
+  'VoiceRoomSpace': 'VoiceRoomSpace'
 }
 theme = themes[theme] || window.mumbleWebConfig.defaults.theme
 window.theme = theme
@@ -19,7 +20,12 @@ var [loadingTheme, mainTheme] = {
   'MetroMumbleDark': [
     require('../themes/MetroMumbleDark/loading.scss'),
     require('../themes/MetroMumbleDark/main.scss')
+  ],
+  'VoiceRoomSpace': [
+    require('../themes/VoiceRoomSpace/loading.scss'),
+    require('../themes/VoiceRoomSpace/main.scss')
   ]
+
 }[theme]
 
 function useStyle (url) {

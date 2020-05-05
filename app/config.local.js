@@ -4,6 +4,16 @@
 
 let config = window.mumbleWebConfig // eslint-disable-line no-unused-vars
 
-// E.g. changing default address and theme:
-// config.defaults.address = 'voice.example.com'
-// config.defaults.theme = 'MetroMumbleDark'
+config.connectDialog.address = false
+config.connectDialog.port = false
+config.connectDialog.username = true
+config.connectDialog.password = false
+config.connectDialog.token = false
+config.connectDialog.channelName = false
+
+config.defaults.address = 'voiceroom.space'
+config.defaults.port = '443/demo'
+config.defaults.theme = 'VoiceRoomSpace'
+
+config.settings.voiceMode = 'cont'
+config.settings.toolbarVertical = false
