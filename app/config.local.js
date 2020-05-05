@@ -8,7 +8,7 @@ config.connectDialog.address = false
 config.connectDialog.port = false
 config.connectDialog.username = true
 config.connectDialog.password = false
-config.connectDialog.token = false
+config.connectDialog.token = true
 config.connectDialog.channelName = false
 
 config.defaults.address = 'voiceroom.space'

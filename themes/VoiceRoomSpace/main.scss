@@ -46,7 +46,7 @@ $channel-selected-bg-color: $lightblue !default
   top: 66px;
   margin-top: 2px;
   width: calc(30% - 6px);
-  height: calc(80% - 140px);
+  height: calc(60% - 140px);
   min-width: 260px;
   opacity: 0.8;
   overflow-y: auto;
@@ -68,11 +68,23 @@ body, input, button, .dialog-submit, .dialog-close {
   font-size:1.2em;
 }
 
+form {
+  font-size:0.8em;
+}
+
+.dialog {
+  width:90%;
+  max-width: 600px;
+  position:absolute;
+  top:20%;
+  left:50%;
+}
+
 #message-box {
     left: 0;
     padding: 1% 1% 1% 1%;
     z-index: 3;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border: none;
     background: #eee;
@@ -80,4 +92,26 @@ body, input, button, .dialog-submit, .dialog-close {
     width: 96%;
     margin: 0 1% 0 1%;
     height: 60px;
+}
+
+
+
+@media only screen and (max-width: 600px)  {
+
+  .toolbar-horizontal ~ .channel-root-container, .toolbar-vertical ~ .channel-root-container {
+    /*margin-top:60px;*/
+    height:calc(100% - 340px);
+    position:static;
+    width:98%;
+  }
+
+  .toolbar-horizontal ~ .chat, .toolbar-vertical ~ .chat {
+    /*padding-top:80%;*/
+    position:fixed;
+    bottom: 60px;
+    left:0;
+    height:200px;
+    y-overflow:auto;
+    font-size:0.8em;
+  }
 }
