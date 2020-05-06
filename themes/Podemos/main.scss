@@ -1,0 +1,63 @@
+$primary: #683064;
+$secondary: #AC5C92;
+$success: #02747F;
+$info: #C9A0CE;
+$warning: #8A8A8D;
+$light: #A7E6D9;
+$dark: #3C3C3B;
+
+$black: $primary !default
+$darkgray: $dark !default
+/*$gray: #555 !default*/
+$gray: $success !default
+$lightgray: $light !default
+/*$bg-color: #2c2c2c !default*/
+$bg-color: $primary !default
+$white: #eee !default
+
+$lightblue: $secondary !default
+
+$toolbar-bg-color: $info !default
+$toolbar-hover-bg-color: $success !default
+$toolbar-hover-border-color: $lightblue !default
+$toolbar-active-bg-color: $gray !default
+$toolbar-active-border-color: $gray !default
+$channel-selected-bg-color: $secondary !default
+
+$channels-bg-color: #eee !default
+$channels-border-color: $primary !default
+$chat-bg-color: #aaa !default
+$chat-input-color: $white;
+$chat-border-color: $primary !default
+
+
+$dialog-header-color: $white !default
+$dialog-header-bg-color: $primary !default
+$dialog-header-border-bottom-color: $secondary !default
+$dialog-bg-color: $bg-color !default
+$dialog-border-color: $secondary !default
+$dialog-color: $white !default
+$dialog-button-border-color: $white !default
+$dialog-button-bg-color: $success !default
+$dialog-button-color: $white !default
+$dialog-input-border-color: $primary !default
+$dialog-input-bg-color: $white !default
+$dialog-input-color: $primary !default
+
+
+@import '../VoiceRoomSpace/main';
+
+#message-box {
+left: 0;
+padding: 1% 1% 1% 1%;
+z-index: 3;
+position: fixed;
+bottom: 0;
+border: none;
+background: #eee;
+color: $primary;
+width: 96%;
+margin: 0 1% 0 1%;
+height: 60px;
+}
+

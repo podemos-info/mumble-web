@@ -17,7 +17,7 @@ $channel-selected-bg-color: $lightblue !default
 @import '../MetroMumbleLight/main';
 
 .dialog-header {
-  color: #000;
+  color: $dialog-header-color;
   font-weight: bold;
 }
 
